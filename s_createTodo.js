@@ -5,13 +5,13 @@ serverlessSDK = new serverlessSDK({
   applicationName: 'aws-node-http-api',
   appUid: 'bFLcNLt67MHwc2Dfpz',
   orgUid: '82ba7413-2ede-431a-b225-eb312116b0d9',
-  deploymentUid: '582ad018-951c-4c50-b04a-67fa69bee483',
+  deploymentUid: '80f915f6-2446-49fd-aa7b-b0767b15edde',
   serviceName: 'slsTestNode',
   shouldLogMeta: true,
   shouldCompressLogs: true,
   disableAwsSpans: false,
   disableHttpSpans: false,
-  stageName: 'prod',
+  stageName: 'dev',
   serverlessPlatformStage: 'prod',
   devModeEnabled: false,
   accessKey: null,
@@ -19,7 +19,7 @@ serverlessSDK = new serverlessSDK({
   disableFrameworksInstrumentation: false
 });
 
-const handlerWrapperArgs = { functionName: 'slsTestNode-prod-createTodo', timeout: 6 };
+const handlerWrapperArgs = { functionName: 'slsTestNode-dev-createTodo', timeout: 6 };
 
 try {
   const userHandler = require('./src/handlers/create-todo.js');

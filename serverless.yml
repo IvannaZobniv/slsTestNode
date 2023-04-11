@@ -1,5 +1,6 @@
 org: ivanna
-app: aws-node-http-api
+app: todo-list
+#app: aws-node-http-api
 service: slsTestNode
 frameworkVersion: '3'
 
