@@ -1,0 +1,20 @@
+service: slsTestNode
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  getUsers:
+    handler: index.getUsers
+    events:
+      - httpApi:
+          path: /users
+          method: get
+  getCars:
+    handler: index.getCars
+    events:
+      - httpApi:
+          path: /cars
+          method: get
