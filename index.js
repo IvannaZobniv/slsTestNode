@@ -12,9 +12,3 @@ module.exports.getCars = async (event) => {
     };
 };
 
-module.exports.getIcecreams = async (event) => {
-    return {
-        statusCode: 200,
-        body: JSON.stringify([{id:1,model:'BMW'}])
-    };
-};
