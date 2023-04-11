@@ -2,10 +2,10 @@
 var serverlessSDK = require('./serverless_sdk/index.js');
 serverlessSDK = new serverlessSDK({
   orgId: 'ivanna',
-  applicationName: 'aws-node-http-api',
-  appUid: 'bFLcNLt67MHwc2Dfpz',
+  applicationName: 'todo-list',
+  appUid: 'DvZ47sv8gqtMyPX1Xc',
   orgUid: '82ba7413-2ede-431a-b225-eb312116b0d9',
-  deploymentUid: '80f915f6-2446-49fd-aa7b-b0767b15edde',
+  deploymentUid: 'a19436d3-9660-4866-a3e4-4d1dddd8300a',
   serviceName: 'slsTestNode',
   shouldLogMeta: true,
   shouldCompressLogs: true,
