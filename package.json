@@ -1,9 +1,16 @@
 {
   "name": "slstestnode",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "sls serverless node",
-  "main": "index.js",
+  "main": "src/handlers/get-todos.js",
   "scripts": {
+    "start:local": "sls offline start",
+    "start:dev": " set NODE_ENV=dev sls offline start",
+    "start:prod": "set NODE_ENV=prod sls offline start",
+    "deploy:dev": "sls deploy --stage dev",
+    "deploy:prod": "sls deploy --stage prod",
+    "remove:dev": "sls remove --stage dev",
+    "remove:prod": "sls remove --stage prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "iva",
@@ -11,5 +18,10 @@
   "repository": {
     "type": "git",
     "url": "slsTestNode"
+  },
+  "dependencies": {
+    "mongodb": "^5.2.0",
+    "serverless-dotenv-plugin": "^6.0.0",
+    "serverless-offline": "^12.0.4"
   }
 }
